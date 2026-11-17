@@ -1,0 +1,133 @@
+* {
+    margin: 0;             
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.encabezado {
+    display: flex;             
+    justify-content: space-between;  
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #38260a;       
+    color: white;
+}
+
+.encabezado button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative; 
+    height: 400px;
+    background-color: #0a0a12;
+}
+ 
+.boton:hover {
+    transform: scale(1.05);
+}
+
+.encabezado {
+    display: flex;                  
+    justify-content: space-between;  
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.encabezado a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.encabezado a:hover {
+    color: #f5c518;  
+}
+
+.seccion {
+    padding: 40px 30px;
+}
+
+.seccion h2 {
+    margin-bottom: 15px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1; 
+}
+
+#monstruo-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+#monstruo-datos {
+    list-style: none;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.boton {
+    padding: 12px 24px;
+    background-color: var(--color-boton);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    opacity: 0.85;
+}
+
+.caja-3d canvas {
+    display: block;
+}
+
+.pie {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-principal);
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    .seccion {
+        padding: 25px 15px;
+    }
+}
